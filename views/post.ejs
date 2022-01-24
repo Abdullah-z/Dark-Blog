@@ -1,0 +1,32 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <% include partials/header %>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <h1 class="text-3xl font-medium title-font text-white mb-12 text-center"><%=title%></h1>
+      <img class="lg:w-6/6 md:w-6/6 w-6/6 mb-10 object-cover object-center rounded" alt="hero" src=<%=image%>>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/1 w-full">
+          <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+
+            <p class="leading-relaxed mb-6"><%=content%></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <% include partials/footer %>
+  </body>
+</html>
